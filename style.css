@@ -1,0 +1,117 @@
+/* Жалпы стильдер */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Header (Бас бөлім) */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Негізгі секциялар */
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p {
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+/* Дағдылар тізімі */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#skills li {
+    background: #edf2f7;
+    color: #2d3748;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+#skills li:hover {
+    background: #667eea;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer (Төменгі бөлім) */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* Адаптивтілік (Телефондар үшін) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
